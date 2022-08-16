@@ -33,6 +33,12 @@ header {
   color: silver;
   transition: .2s ease-in-out;
 }
+
+/* accesibility focus ARIA */
+.main_nav_burguer:focus {
+  background-color: antiquewhite;
+}
+
 #main_check:checked {
   cursor: pointer;
   transform: rotate(0deg);
@@ -82,6 +88,7 @@ input {
 ul li span:hover
  {
   background-color: #434343;
+  display: inline-block;
   width: 100%;
   padding: .2rem 1rem;
   border-radius: 4px;
@@ -97,7 +104,6 @@ ul li span:hover
   flex-direction: column;
   transition: .3s ease-in-out;
   width: 50vw;
-  transition: 1s ease-in-out;
 }
 
 /*display second level */
